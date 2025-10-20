@@ -1,0 +1,15 @@
+yt-dlp
+pydub
+openai-whisper
+torch
+numpy
+tqdm
+more-itertools
+transformers
+scikit-learn
+bertopic
+sentence-transformers
+umap-learn
+hdbscan
+nltk
+pandas

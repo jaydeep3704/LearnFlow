@@ -1,0 +1,236 @@
+[
+  {
+    "index": 1,
+    "title": "Data Science",
+    "timestamp": "0:01",
+    "duration_minutes": 9.7,
+    "keywords": [
+      "data",
+      "learning",
+      "science",
+      "data science",
+      "machine"
+    ]
+  },
+  {
+    "index": 2,
+    "title": "Dealing With Missing Data in Machine Learning",
+    "timestamp": "10:33",
+    "duration_minutes": 2.2,
+    "keywords": [
+      "data",
+      "missing",
+      "population",
+      "outliers",
+      "feature"
+    ]
+  },
+  {
+    "index": 3,
+    "title": "Machine Learning",
+    "timestamp": "14:31",
+    "duration_minutes": 4.2,
+    "keywords": [
+      "learning",
+      "machine",
+      "data",
+      "machine learning",
+      "supervised"
+    ]
+  },
+  {
+    "index": 4,
+    "title": "Understanding Model Bias and Variance",
+    "timestamp": "18:31",
+    "duration_minutes": 2.2,
+    "keywords": [
+      "model",
+      "data",
+      "data set",
+      "set",
+      "training"
+    ]
+  },
+  {
+    "index": 5,
+    "title": "Understanding Machine Learning Models",
+    "timestamp": "24:31",
+    "duration_minutes": 4.3,
+    "keywords": [
+      "regression",
+      "model",
+      "learning",
+      "models",
+      "data"
+    ]
+  },
+  {
+    "index": 6,
+    "title": "Linear Regression",
+    "timestamp": "28:31",
+    "duration_minutes": 5.2,
+    "keywords": [
+      "linear",
+      "regression",
+      "linear regression",
+      "plus",
+      "b0"
+    ]
+  },
+  {
+    "index": 7,
+    "title": "Understanding Decision Trees",
+    "timestamp": "35:01",
+    "duration_minutes": 5.7,
+    "keywords": [
+      "decision",
+      "tree",
+      "node",
+      "data",
+      "decision tree"
+    ]
+  },
+  {
+    "index": 8,
+    "title": "How to Calculate Information Gain Using Decision Trees",
+    "timestamp": "40:31",
+    "duration_minutes": 3.3,
+    "keywords": [
+      "divided",
+      "equals",
+      "entropy",
+      "300",
+      "200"
+    ]
+  },
+  {
+    "index": 9,
+    "title": "Decision and Model",
+    "timestamp": "43:31",
+    "duration_minutes": 9.2,
+    "keywords": [
+      "decision",
+      "model",
+      "data",
+      "trees",
+      "boosting"
+    ]
+  },
+  {
+    "index": 10,
+    "title": "Data and Hyperplane",
+    "timestamp": "52:31",
+    "duration_minutes": 3.8,
+    "keywords": [
+      "data",
+      "hyperplane",
+      "set",
+      "balls",
+      "example"
+    ]
+  },
+  {
+    "index": 11,
+    "title": "How Logistic Regression Works",
+    "timestamp": "56:31",
+    "duration_minutes": 3.2,
+    "keywords": [
+      "data",
+      "point",
+      "class",
+      "data point",
+      "points"
+    ]
+  },
+  {
+    "index": 12,
+    "title": "Regression and Probability",
+    "timestamp": "59:31",
+    "duration_minutes": 5.3,
+    "keywords": [
+      "regression",
+      "probability",
+      "equals",
+      "value",
+      "logistic"
+    ]
+  },
+  {
+    "index": 13,
+    "title": "Neural Network",
+    "timestamp": "1:04:31",
+    "duration_minutes": 8.7,
+    "keywords": [
+      "neural",
+      "network",
+      "output",
+      "neural network",
+      "let"
+    ]
+  },
+  {
+    "index": 14,
+    "title": "Data Points",
+    "timestamp": "1:13:01",
+    "duration_minutes": 5.2,
+    "keywords": [
+      "data",
+      "clusters",
+      "clustering",
+      "points",
+      "data points"
+    ]
+  },
+  {
+    "index": 15,
+    "title": "Evaluating Model Performance Using Metrics",
+    "timestamp": "1:18:31",
+    "duration_minutes": 5.2,
+    "keywords": [
+      "data",
+      "model",
+      "adjusted",
+      "positive",
+      "class"
+    ]
+  },
+  {
+    "index": 16,
+    "title": "Understanding Cross Validation Techniques for Data Science",
+    "timestamp": "1:24:01",
+    "duration_minutes": 2.7,
+    "keywords": [
+      "data",
+      "validation",
+      "data set",
+      "set",
+      "cross validation"
+    ]
+  },
+  {
+    "index": 17,
+    "title": "Understanding Data Science and Machine Learning",
+    "timestamp": "1:26:31",
+    "duration_minutes": 8.7,
+    "keywords": [
+      "feature",
+      "features",
+      "data",
+      "set",
+      "data set"
+    ]
+  },
+  {
+    "index": 18,
+    "title": "Introduction to Machine Learning",
+    "timestamp": "1:35:01",
+    "duration_minutes": 2.5,
+    "keywords": [
+      "learning",
+      "machine",
+      "machine learning",
+      "forward",
+      "forward slash"
+    ]
+  }
+]
