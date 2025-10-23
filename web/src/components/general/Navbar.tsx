@@ -7,7 +7,7 @@ export function Navbar() {
     return (
         <div 
         className="px-[4%] py-5 shadow-sm border-b border-muted-foreground/15 sticky top-0 left-0 right-0 bg-background/50
-        backdrop-blur-md 
+        backdrop-blur-md z-100
         ">
             <div className="flex justify-between">
                 <h1 className="flex gap-2 items-center font-bold">
