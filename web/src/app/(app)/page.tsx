@@ -7,7 +7,6 @@ import { GraduationCap } from "lucide-react"
 export default function HomePage() {
   return (
     <div>
-      <Navbar />
       <HeroSection />
       <HowItWorks />
       <div className="max-w-7xl mx-auto lg:py-20 px-[4%] py-10 space-y-4">
@@ -23,7 +22,6 @@ export default function HomePage() {
         </div>
 
       </div>
-      <Footer/>
     </div>
   )
 }
