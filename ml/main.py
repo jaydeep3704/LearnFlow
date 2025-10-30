@@ -26,7 +26,7 @@ CORS(app)
 jobs = {}
 whisper_model = None
 llm_generator = None
-
+llm_cleaner = None
 # ============================================================================
 # TRANSCRIPTION FUNCTIONS
 # ============================================================================
@@ -413,12 +413,23 @@ def create_time_windows(transcript_words, window_seconds=45, overlap_seconds=15)
 def cluster_topics(windows, min_topic_size=5):
     texts = [w["text"] for w in windows]
     
+    # -------------------------------------------------------------
+    # FIX: Dynamically set min_df based on the number of documents (windows)
+    # -------------------------------------------------------------
+    num_documents = len(texts)
+    
+    # If there are 0 or 1 documents, set min_df to 1 so the vocabulary isn't empty.
+    # If there are 2 or more, use the desired min_df=2 to filter noise.
+    vectorizer_min_df = 1 if num_documents < 2 else 2
+    # -------------------------------------------------------------
+    
     embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
     vectorizer_model = CountVectorizer(
         ngram_range=(1, 2),
         stop_words='english',
         max_features=500,
-        min_df=2
+        # Apply the dynamic value:
+        min_df=vectorizer_min_df
     )
     
     topic_model = BERTopic(
@@ -430,6 +441,7 @@ def cluster_topics(windows, min_topic_size=5):
         nr_topics="auto"
     )
     
+    # The rest of the function remains the same
     topics, _ = topic_model.fit_transform(texts)
     
     for i, window in enumerate(windows):
