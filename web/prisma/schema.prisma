@@ -1,11 +1,8 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
-  provider = "prisma-client"
+  provider = "prisma-client-js"
   output   = "../src/generated/prisma"
 }
 
@@ -66,28 +63,31 @@ model VerificationToken {
   @@map("verification_tokens")
 }
 
-
 model Course {
-  id           String   @id @default(cuid())
+  id           String       @id @default(cuid())
   title        String
   youtubeUrl   String
   status       CourseStatus @default(PENDING)
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  jobId        String?      // ML processing job ID
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
   userId       String
-  user         User    @relation(fields: [userId], references: [id])
+  user         User         @relation(fields: [userId], references: [id], onDelete: Cascade)
   chapters     Chapter[]
 }
 
-model Chapter{
-  id          String @id @default(cuid())
+model Chapter {
+  id          String   @id @default(cuid())
   title       String
   courseId    String
-  course      Course @relation(fields: [courseId],references: [id])
-  start       String
-  end         String
+  course      Course   @relation(fields: [courseId], references: [id], onDelete: Cascade)
+  start       String   // Store as string for precision
+  end         String   // Store as string for precision
   index       Int
+  keywords    String[] // Store keywords as array
+  createdAt   DateTime @default(now())
 
+  @@index([courseId])
 }
 
 enum CourseStatus {
